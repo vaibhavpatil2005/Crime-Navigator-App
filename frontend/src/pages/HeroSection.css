@@ -1,0 +1,148 @@
+/* Hero Section */
+#hero-section {
+    background: linear-gradient(to right, black, black); /* Equivalent to bg-gradient-to-r from-black to-black */
+    padding: 64px 0; /* Equivalent to py-16 */
+    overflow: hidden; /* Equivalent to overflow-hidden */
+  }
+  
+  #hero-container {
+    max-width: 1200px; /* Equivalent to container */
+    margin: 0 auto; /* Equivalent to mx-auto */
+    padding: 0 16px; /* Equivalent to px-4 */
+  }
+  
+  #hero-grid {
+    display: grid; /* Equivalent to grid */
+    grid-template-columns: 1fr; /* Equivalent to grid-cols-1 */
+    gap: 32px; /* Equivalent to gap-8 */
+    align-items: center; /* Equivalent to items-center */
+  }
+  
+  @media (min-width: 768px) {
+    #hero-grid {
+      grid-template-columns: repeat(2, 1fr); /* Equivalent to md:grid-cols-2 */
+    }
+  }
+  
+  /* Hero Image */
+  #hero-image {
+    order: 2; /* Equivalent to order-2 */
+  }
+  
+  @media (min-width: 768px) {
+    #hero-image {
+      order: 1; /* Equivalent to md:order-1 */
+    }
+  }
+  
+  #hero-image img {
+    width: 100%; /* Equivalent to w-full */
+    height: auto; /* Equivalent to h-auto */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Equivalent to shadow-2xl */
+    transition: transform 0.3s ease; /* Equivalent to transform transition-transform duration-300 */
+  }
+  
+  #hero-image img:hover {
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+  }
+  
+  /* Hero Content */
+  #hero-content {
+    order: 1; /* Equivalent to order-1 */
+    text-align: center; /* Equivalent to text-center */
+  }
+  
+  @media (min-width: 768px) {
+    #hero-content {
+      order: 2; /* Equivalent to md:order-2 */
+      text-align: left; /* Equivalent to md:text-left */
+    }
+  }
+  
+  #hero-subtext {
+    font-size: 18px; /* Equivalent to text-lg */
+    color: rgba(255, 255, 255, 0.9); /* Equivalent to text-white opacity-90 */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+  }
+  
+  #hero-heading {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    color: white; /* Equivalent to text-white */
+    margin-bottom: 24px; /* Equivalent to mb-6 */
+    animation: fadeInUp 1.5s ease-in-out; /* Equivalent to animate-fade-in-up */
+  }
+  
+  @media (min-width: 768px) {
+    #hero-heading {
+      font-size: 3rem; /* Equivalent to md:text-5xl */
+    }
+  }
+  
+  #hero-description {
+    font-size: 18px; /* Equivalent to text-lg */
+    color: rgba(255, 255, 255, 0.9); /* Equivalent to text-white opacity-90 */
+    margin-bottom: 32px; /* Equivalent to mb-8 */
+  }
+  
+  /* Hero Buttons */
+  #hero-buttons {
+    display: flex; /* Equivalent to flex */
+    flex-direction: column; /* Equivalent to flex-col */
+    gap: 16px; /* Equivalent to gap-4 */
+    justify-content: center; /* Equivalent to justify-center */
+  }
+  
+  @media (min-width: 768px) {
+    #hero-buttons {
+      flex-direction: row; /* Equivalent to md:flex-row */
+      justify-content: flex-start; /* Equivalent to md:justify-start */
+    }
+  }
+  
+  #hero-button-primary {
+    background-color: #ef4444; /* Equivalent to bg-red-500 */
+    color: white; /* Equivalent to text-white */
+    padding: 12px 32px; /* Equivalent to px-8 py-3 */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    font-weight: 600; /* Equivalent to font-semibold */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Equivalent to transition-all duration-300 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-lg */
+  }
+  
+  #hero-button-primary:hover {
+    background-color: #dc2626; /* Equivalent to hover:bg-red-600 */
+    transform: translateY(-4px); /* Equivalent to hover:-translate-y-1 */
+  }
+  
+  #hero-button-secondary {
+    background-color: transparent; /* Equivalent to bg-transparent */
+    border: 2px solid white; /* Equivalent to border-2 border-white */
+    color: white; /* Equivalent to text-white */
+    padding: 12px 32px; /* Equivalent to px-8 py-3 */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    font-weight: 600; /* Equivalent to font-semibold */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Equivalent to transition-all duration-300 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-lg */
+  }
+  
+  #hero-button-secondary:hover {
+    background-color: white; /* Equivalent to hover:bg-white */
+    color: #3b82f6; /* Equivalent to hover:text-blue-500 */
+    transform: translateY(-4px); /* Equivalent to hover:-translate-y-1 */
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

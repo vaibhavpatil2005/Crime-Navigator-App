@@ -1,0 +1,13 @@
+@import url("./animate.css");
+@import url("./bootstrap-5.0.5-alpha.min.css");
+@import url("./LineIcons.2.0.css");
+@import url("./main.css");
+@import url("./tiny-slider.css");
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+   
+  }

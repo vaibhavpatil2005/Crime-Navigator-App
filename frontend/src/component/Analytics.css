@@ -1,0 +1,78 @@
+/* Analytics Section */
+.analytics-section {
+    padding: 40px 0;
+    background-color: #000000;
+  }
+  
+  .analytics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Analytics Card */
+  .analytics-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .analytics-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Analytics Number */
+  .analytics-number {
+    font-size: 2.25rem; /* 36px */
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .analytics-number.blue {
+    color: #3b82f6; /* Blue */
+  }
+  
+  .analytics-number.green {
+    color: #10b981; /* Green */
+  }
+  
+  .analytics-number.purple {
+    color: #8b5cf6; /* Purple */
+  }
+  
+  .analytics-number.red {
+    color: #ef4444; /* Red */
+  }
+  
+  /* Analytics Text */
+  .analytics-text {
+    font-size: 1.125rem; /* 18px */
+    color: #4b5563; /* Gray */
+    margin-top: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .analytics-container {
+      gap: 20px;
+    }
+  
+    .analytics-card {
+      padding: 20px;
+    }
+  
+    .analytics-number {
+      font-size: 2rem; /* 32px */
+    }
+  
+    .analytics-text {
+      font-size: 1rem; /* 16px */
+    }
+  }
